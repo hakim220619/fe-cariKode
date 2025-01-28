@@ -28,33 +28,33 @@ const AboutSectionTwo = () => {
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
+                  Source Code Bebas Bug
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Dlhcode menyediakan source code yang telah diuji dan dirancang untuk
+                  meminimalkan bug, memastikan stabilitas proyek Anda.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
+                  Dukungan Prioritas
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  Kami memberikan dukungan teknis prioritas untuk memastikan setiap
+                  kendala dapat diselesaikan dengan cepat dan efektif.
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
+                  Dibangun dengan Berbagai Bahasa Pemrograman
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
+                  Dlhcode menggunakan berbagai bahasa pemrograman modern seperti JavaScript, Python, dan PHP untuk memberikan fleksibilitas tinggi serta kemudahan pengembangan sesuai kebutuhan Anda.
                 </p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

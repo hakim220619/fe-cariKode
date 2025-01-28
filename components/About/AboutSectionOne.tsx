@@ -24,10 +24,11 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Dibuat untuk Developer, Startup, dan Bisnis."
+                paragraph="Dlhcode hadir untuk menyediakan solusi dan resource berkualitas tinggi, termasuk source code, tutorial, dan dokumentasi yang membantu Anda membangun aplikasi atau website dengan mudah dan efisien."
                 mb="44px"
               />
+
 
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
@@ -35,16 +36,18 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Source code berkualitas" />
+                    <List text="Framework modern (Tailwind CSS)" />
+                    <List text="Lisensi fleksibel (gratis & premium)" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Dibangun dengan berbagai bahasa pemrograman" />
+                    <List text="Dokumentasi terperinci" />
+                    <List text="Mudah untuk semua developer" />
                   </div>
+
+
                 </div>
               </div>
             </div>

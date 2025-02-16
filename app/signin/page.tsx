@@ -1,14 +1,40 @@
+"use client"; 
 import Link from "next/link";
 
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Sign In Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Sign In Page for Startup Nextjs Template",
-  // other metadata
-};
+import { useState } from "react";
+import axiosInstance from "lib/axiosInstance";
+
 
 const SigninPage = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError(""); // Reset error on new submission
+    try {
+      const response = await axiosInstance.post("/api/login", {
+        email,
+        password,
+      });
+      console.log(response);
+      
+      // Handle success (e.g., redirect to dashboard, save token)
+      console.log("Login successful", response.data);
+      setIsLoading(false)
+    } catch (err) {
+      setError("Login failed. Please check your credentials.");
+      setIsLoading(false)
+      console.error("Login error:", err);
+    }
+  };
+ 
+
   return (
     <>
       <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
@@ -91,6 +117,8 @@ const SigninPage = () => {
                     <input
                       type="email"
                       name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your Email"
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                     />
@@ -105,6 +133,8 @@ const SigninPage = () => {
                     <input
                       type="password"
                       name="password"
+                      value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                       placeholder="Enter your Password"
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                     />
@@ -152,9 +182,15 @@ const SigninPage = () => {
                       </a>
                     </div>
                   </div>
+                  {error && <p className="text-red-500 text-center">{error}</p>}
                   <div className="mb-6">
-                    <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
-                      Sign in
+                    <button
+                      type="submit"
+                      disabled={isLoading}
+                      onClick={handleSubmit}
+                      className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
+                    >
+                      {isLoading ? 'Signing in...' : 'Sign in'}
                     </button>
                   </div>
                 </form>

@@ -25,7 +25,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Dibuat untuk Developer, Startup, dan Bisnis."
-                paragraph="Dlhcode hadir untuk menyediakan solusi dan resource berkualitas tinggi, termasuk source code, tutorial, dan dokumentasi yang membantu Anda membangun aplikasi atau website dengan mudah dan efisien."
+                paragraph="CariKode hadir untuk menyediakan solusi dan resource berkualitas tinggi, termasuk source code, tutorial, dan dokumentasi yang membantu Anda membangun aplikasi atau website dengan mudah dan efisien."
                 mb="44px"
               />
 

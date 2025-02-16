@@ -31,7 +31,7 @@ const AboutSectionTwo = () => {
                   Source Code Bebas Bug
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Dlhcode menyediakan source code yang telah diuji dan dirancang untuk
+                  CariKode menyediakan source code yang telah diuji dan dirancang untuk
                   meminimalkan bug, memastikan stabilitas proyek Anda.
                 </p>
               </div>
@@ -49,7 +49,7 @@ const AboutSectionTwo = () => {
                   Dibangun dengan Berbagai Bahasa Pemrograman
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Dlhcode menggunakan berbagai bahasa pemrograman modern seperti JavaScript, Python, dan PHP untuk memberikan fleksibilitas tinggi serta kemudahan pengembangan sesuai kebutuhan Anda.
+                  CariKode menggunakan berbagai bahasa pemrograman modern seperti JavaScript, Python, dan PHP untuk memberikan fleksibilitas tinggi serta kemudahan pengembangan sesuai kebutuhan Anda.
                 </p>
               </div>
             </div>

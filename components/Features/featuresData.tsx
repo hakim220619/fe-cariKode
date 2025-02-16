@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
     ),
     title: "Dirancang untuk Developer",
     paragraph:
-      "Dlhcode hadir untuk membantu developer dan tim startup dengan berbagai source code yang siap pakai dan dapat disesuaikan untuk kebutuhan Anda.",
+      "CariKode hadir untuk membantu developer dan tim startup dengan berbagai source code yang siap pakai dan dapat disesuaikan untuk kebutuhan Anda.",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const featuresData: Feature[] = [
     ),
     title: "Desain Berkualitas Tinggi",
     paragraph:
-      "Setiap template dan source code di Dlhcode dirancang dengan standar desain yang modern untuk pengalaman pengguna yang optimal.",
+      "Setiap template dan source code di CariKode dirancang dengan standar desain yang modern untuk pengalaman pengguna yang optimal.",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const featuresData: Feature[] = [
     ),
     title: "Berbagai Bahasa Pemrograman",
     paragraph:
-      "Dlhcode menyediakan source code dalam berbagai bahasa pemrograman seperti JavaScript, Python, PHP, dan lainnya.",
+      "CariKode menyediakan source code dalam berbagai bahasa pemrograman seperti JavaScript, Python, PHP, dan lainnya.",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const featuresData: Feature[] = [
     ),
     title: "Gratis & Open Source",
     paragraph:
-      "Dlhcode memberikan banyak pilihan source code gratis yang dapat Anda gunakan untuk belajar maupun membangun proyek secara efisien.",
+      "CariKode memberikan banyak pilihan source code gratis yang dapat Anda gunakan untuk belajar maupun membangun proyek secara efisien.",
   },
   {
     id: 5,
@@ -71,7 +71,7 @@ const featuresData: Feature[] = [
     ),
     title: "Tutorial Mendalam",
     paragraph:
-      "Dlhcode tidak hanya menyediakan source code, tetapi juga tutorial mendalam untuk memahami dan memanfaatkan setiap proyek dengan maksimal.",
+      "CariKode tidak hanya menyediakan source code, tetapi juga tutorial mendalam untuk memahami dan memanfaatkan setiap proyek dengan maksimal.",
   },
   {
     id: 6,
@@ -86,7 +86,7 @@ const featuresData: Feature[] = [
     ),
     title: "Komunitas Aktif",
     paragraph:
-      "Bergabung dengan komunitas aktif Dlhcode untuk berbagi ide, berdiskusi, dan belajar bersama pengembang lain di seluruh dunia.",
+      "Bergabung dengan komunitas aktif CariKode untuk berbagi ide, berdiskusi, dan belajar bersama pengembang lain di seluruh dunia.",
   },
 ];
 

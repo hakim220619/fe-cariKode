@@ -1,7 +1,7 @@
 "use client"; 
 import Link from "next/link";
 
-
+import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import axiosInstance from "lib/axiosInstance";
 
@@ -12,27 +12,44 @@ const SigninPage = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  const router = useRouter();
   
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setError(""); // Reset error on new submission
-    try {
-      const response = await axiosInstance.post("/api/login", {
-        email,
-        password,
-      });
-      console.log(response);
-      
-      // Handle success (e.g., redirect to dashboard, save token)
-      console.log("Login successful", response.data);
-      setIsLoading(false)
-    } catch (err) {
-      setError("Login failed. Please check your credentials.");
-      setIsLoading(false)
-      console.error("Login error:", err);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsLoading(true);
+  setError("");
+  
+  try {
+    const response = await axiosInstance.post("/api/login", {
+      email,
+      password,
+    });
+
+    // Save token and user data in localStorage
+    localStorage.setItem("token", response.data.token);
+    localStorage.setItem("userData", JSON.stringify(response.data.userData));
+
+    // Get the role_id from userData
+    const { role_id } = response.data.userData; 
+
+    // Use the useRouter hook for navigation
+
+
+    // If role_id is 1, redirect to home
+    if (role_id === 1) {
+      setIsLoading(false);
+      router.push("/"); // Redirect to the homepage
+    } else {
+      setIsLoading(false);
+      router.push("/"); // Redirect to the dashboard for non-admin users
     }
-  };
+  } catch (err) {
+    setError("Login failed. Please check your credentials.");
+    setIsLoading(false);
+    console.error("Login error:", err);
+  }
+};
+
  
 
   return (

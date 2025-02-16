@@ -14,7 +14,7 @@ const axiosInstance = axios.create({
 // Optionally you can set interceptors here to handle requests and responses globally
 axiosInstance.interceptors.request.use((config) => {
   // Example: add authorization token to headers globally
-  const token = localStorage.getItem("authToken");
+  const token = localStorage.getItem("token");
   if (token) {
     config.headers["Authorization"] = `Bearer ${token}`;
   }
